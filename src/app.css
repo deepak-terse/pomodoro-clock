@@ -17,3 +17,10 @@ main {
   right: -6.1em;
   cursor: pointer;
 }
+
+#menu {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}

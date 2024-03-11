@@ -28,7 +28,7 @@ export default function App() {
   const [sessionsCount, setSessionsCount] = useState(0)
   const [currentTimerType, setCurrentTimerType] = useState('session')
   const [isSoundOn, setIsSoundOn] = useState(true)
-
+  
   const alertSound = new Audio('./assets/alert.mp3')
 
   const onTimerEnd = () => {
@@ -38,7 +38,7 @@ export default function App() {
 
     switch(currentTimerType) {
       case 'session':
-        setCurrentTimerType(localSessionsCount % 4 === 0 ? 'long_break' : 'short_break')
+        setCurrentTimerType(localSessionsCount % 2 === 0 ? 'long_break' : 'short_break')
         break
       case 'short_break':
       case 'long_break':
@@ -48,7 +48,7 @@ export default function App() {
 
     setSessionsCount(localSessionsCount)
   }
-
+  
   return (<>
     <main>
       <span id="notification-option" className="material-symbols-outlined" onClick={() => setIsSoundOn(!isSoundOn)}>
@@ -61,6 +61,11 @@ export default function App() {
         { times( sessionsCount, () => '🍅 ' )}
         { times( 8 - sessionsCount, () => '\u00A0\u00A0•\u00A0\u00A0')}   
       </h3>
+      {/* <div id="menu">
+        <span className="material-symbols-outlined">bar_chart</span>
+        <span className="material-symbols-outlined">home</span>
+        <span className="material-symbols-outlined">settings</span>
+      </div> */}
 
     </main>
   </>

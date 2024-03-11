@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, memo } from 'react'
 import styled from 'styled-components'
 
 interface TimerProps {
@@ -80,7 +80,7 @@ const Timer: React.FC<TimerProps> = ({ timerOpts, onTimerEnd, ...rest }) => {
     setIsRunning(false)
     setDuration(timerOpts.duration)
     drawProgressArc(100)
-  }, [timerOpts])
+  }, [timerOpts.duration, timerOpts.text])
 
   useEffect(() => {
     setIsRunning(false)
