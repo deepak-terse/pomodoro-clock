@@ -1,28 +1,28 @@
 # Pomodoro Clock
 
-![Pomodoro Clock](screenshots/home_desktop.png)
+![Pomodoro Clock](screenshots/clock.png)
 
-Use our timer based on ancient Chinnese pomodoro technique for time management and improved productivity
+Welcome to our Pomodoro Clock – a timer based on the ancient Italian Pomodoro Technique for efficient time management and enhanced productivity.
 
 ## About the App
 
-A Pomodoro Clock is based on the ancient Chineese time management technique in which one breaks the workday down into manageable 25-minute segments called 'Pomodoros. The app lets you start stop the timer and also alerts you as the timer ends. 
+The Pomodoro Clock follows the principles of the Pomodoro Technique, breaking down the workday into manageable 25-minute segments called Pomodoros. This app enables you to start and stop the timer at your convenience and provides alerts when each timer session ends.
 
 ## Key Features
 
-- **Pomodoros Tracking**: Keep track of the number of promodoros completed in a day
+- **Pomodoros Tracking**:  Keep track of completed Pomodoros throughout your day.
 
-- **Play/Pause**: Play/Pause the timer anytime for unplanned activities.
+- **Play/Pause Functionality**: Pause and resume the timer whenever necessary for unplanned activities.
 
-- **Timer Alert**: Get notified with an alert sound at the end of every timer.
+- **Timer Alert**: Receive audible alerts at the end of each timer session to stay on track with your tasks.
 
 ## Technologies Used
 
-- **React**: A frontend framework that lets you create user interfaces based on components.
+- **React**: A frontend framework for building dynamic user interfaces based on reusable components.
 
-- **Styled Components**: A library that allows you to write CSS in JS while building custom components in Reactjs.
+- **Styled Components**: A library for styling React components with scoped and dynamic CSS.
 
-- **Vite**: A local development server for building web applications with minimal setup.
+- **Vite**: A fast, modern build tool that offers instant server startup for efficient web development and minimal setup.
 
 ## Screenshots
 
